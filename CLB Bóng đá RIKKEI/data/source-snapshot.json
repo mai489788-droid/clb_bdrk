@@ -1,0 +1,4528 @@
+{
+  "source": {
+    "spreadsheetId": "1kX0Buru0yjKmbEliCNz0RT0k3wWAjHJVkZEgqEw1fUs",
+    "url": "https://docs.google.com/spreadsheets/d/1kX0Buru0yjKmbEliCNz0RT0k3wWAjHJVkZEgqEw1fUs/edit?gid=0#gid=0",
+    "title": "CLB Bóng đá PTIT x Rikkei",
+    "snapshotDate": "2026-10-09",
+    "importedAt": "2026-10-09",
+    "sha256": "d2f06b19c7fcc7fabae1ce0456f321296840cbfeb473190e4ec681425019e7c9",
+    "mode": "snapshot",
+    "dateSystem": "1900",
+    "sheets": [
+      {
+        "name": "ĐẦU VIỆC ",
+        "index": 1,
+        "nonemptyRows": 21
+      },
+      {
+        "name": "Ban truyền thông ",
+        "index": 2,
+        "nonemptyRows": 0
+      },
+      {
+        "name": "Ban chuyên môn",
+        "index": 3,
+        "nonemptyRows": 10
+      },
+      {
+        "name": "Ban quản lý đội ",
+        "index": 4,
+        "nonemptyRows": 0
+      },
+      {
+        "name": "Ban tài chính ",
+        "index": 5,
+        "nonemptyRows": 4
+      },
+      {
+        "name": "NỘI QUY CLB",
+        "index": 6,
+        "nonemptyRows": 2
+      },
+      {
+        "name": "Danh sách thành viên CLB Bóng đ",
+        "index": 7,
+        "nonemptyRows": 51
+      },
+      {
+        "name": "Dự trù chi phí",
+        "index": 8,
+        "nonemptyRows": 7
+      },
+      {
+        "name": "Tổng hợp quỹ Hà Nội",
+        "index": 9,
+        "nonemptyRows": 8
+      }
+    ],
+    "warnings": [
+      {
+        "id": "roster-finance-count",
+        "message": "Danh sách có 50 thành viên; bảng tổng hợp quỹ dùng cơ sở 48 thành viên. Giữ nguyên tổng dự kiến của bảng nguồn, chưa tự tính lại theo danh sách.",
+        "source": {
+          "sheets": [
+            "Danh sách thành viên CLB Bóng đ",
+            "Tổng hợp quỹ Hà Nội"
+          ]
+        }
+      },
+      {
+        "id": "ready-confirmed-count",
+        "message": "Danh sách ghi 12 người ‘Sẵn sàng’ và 38 ‘Chờ xác nhận’; chỉ tiêu tài chính ghi 48 thành viên Hà Nội đã xác nhận. Hai cách ghi nhận cần được đối chiếu.",
+        "source": {
+          "sheets": [
+            "Danh sách thành viên CLB Bóng đ",
+            "Tổng hợp quỹ Hà Nội"
+          ]
+        }
+      },
+      {
+        "id": "no-actual-expenses",
+        "message": "Nguồn ghi quỹ thực thu 2.300.000 ₫, chưa có số thực chi hoặc số dư đầu kỳ; chưa thể xác định số dư tiền thực tế.",
+        "source": {
+          "sheets": [
+            "Tổng hợp quỹ Hà Nội",
+            "Ban tài chính "
+          ]
+        }
+      },
+      {
+        "id": "missing-dues-date",
+        "message": "Trạng thái đóng quỹ không kèm ngày nộp, tháng áp dụng cụ thể hoặc số tiền của từng người trong ô dữ liệu. Không chuyển trạng thái thành giao dịch thu.",
+        "source": {
+          "sheet": "Danh sách thành viên CLB Bóng đ"
+        }
+      },
+      {
+        "id": "unassigned-receipts",
+        "message": "Có 2 ảnh bill nổi, lệch ô; giữ riêng để đối chiếu người nộp, chưa gán tự động cho thành viên.",
+        "source": {
+          "sheet": "Danh sách thành viên CLB Bóng đ",
+          "cells": [
+            "H3",
+            "I42"
+          ]
+        }
+      },
+      {
+        "id": "tentative-venues",
+        "message": "6 sân đang ‘Chưa Khảo Sát’, chưa chốt deal. Thứ 5, 19h30–21h là lịch dự kiến, chưa tạo trận đấu đã xác nhận.",
+        "source": {
+          "sheet": "Ban chuyên môn"
+        }
+      },
+      {
+        "id": "date-year",
+        "message": "Hạn công việc hiển thị ngày/tháng trong Sheet; năm 2026 được đọc từ giá trị ngày Excel gốc. Giữ nguyên cả giá trị số và định dạng nguồn.",
+        "source": {
+          "sheet": "ĐẦU VIỆC "
+        }
+      }
+    ]
+  },
+  "sheets": [
+    {
+      "index": 1,
+      "name": "ĐẦU VIỆC ",
+      "path": "xl/worksheets/sheet1.xml",
+      "rows": [
+        {
+          "row": 1,
+          "cells": {
+            "A1": {
+              "text": "Ban ",
+              "type": "s",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B1": {
+              "text": "Công việc ",
+              "type": "s",
+              "rawValue": "2",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C1": {
+              "text": " Người đảm nhiệm",
+              "type": "s",
+              "rawValue": "7",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D1": {
+              "text": "Deadline hoàn thành ",
+              "type": "s",
+              "rawValue": "10",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E1": {
+              "text": "Tiến độ ",
+              "type": "s",
+              "rawValue": "12",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F1": {
+              "text": "Ghi chú",
+              "type": "s",
+              "rawValue": "15",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 2,
+          "cells": {
+            "A2": {
+              "text": "Ban Truyền thông",
+              "type": "s",
+              "rawValue": "20",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B2": {
+              "text": "Lập Fanpage trên Facebook.",
+              "type": "s",
+              "rawValue": "25",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C2": {
+              "text": "Hà Vy",
+              "type": "s",
+              "rawValue": "28",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D2": {
+              "text": "46303.0",
+              "type": "n",
+              "rawValue": "46303.0",
+              "numberFormat": "dd/mm",
+              "formula": null
+            },
+            "E2": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F2": {
+              "text": "Ban Truyền Thông",
+              "type": "s",
+              "rawValue": "31",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 3,
+          "cells": {
+            "B3": {
+              "text": "Đẩy quảng cáo fanpage vào Nhà Chung.",
+              "type": "s",
+              "rawValue": "32",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C3": {
+              "text": "Hà Vy",
+              "type": "s",
+              "rawValue": "28",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D3": {
+              "text": "46303.0",
+              "type": "n",
+              "rawValue": "46303.0",
+              "numberFormat": "dd/mm",
+              "formula": null
+            },
+            "E3": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 4,
+          "cells": {
+            "B4": {
+              "text": "Nhả hint bí ẩn về lộ trình của CLB.",
+              "type": "s",
+              "rawValue": "34",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C4": {
+              "text": "klinh",
+              "type": "s",
+              "rawValue": "35",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D4": {
+              "text": "46310.0",
+              "type": "n",
+              "rawValue": "46310.0",
+              "numberFormat": "d/m",
+              "formula": null
+            },
+            "E4": {
+              "text": "Chưa triển khai ",
+              "type": "s",
+              "rawValue": "37",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 5,
+          "cells": {
+            "B5": {
+              "text": "Up lại bài tuyển member của CLB để mọi người biết hạn đóng đơn và thời gian bắt đầu hoạt động.",
+              "type": "s",
+              "rawValue": "43",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C5": {
+              "text": "Diệu Anh",
+              "type": "s",
+              "rawValue": "45",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D5": {
+              "text": "46302.0",
+              "type": "n",
+              "rawValue": "46302.0",
+              "numberFormat": "dd/mm",
+              "formula": null
+            },
+            "E5": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 7,
+          "cells": {
+            "A7": {
+              "text": "Ban Chuyên môn ",
+              "type": "s",
+              "rawValue": "47",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B7": {
+              "text": "Chốt lại giờ đá hàng tuần và sân đá.",
+              "type": "s",
+              "rawValue": "48",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C7": {
+              "text": "Long Hoàng",
+              "type": "s",
+              "rawValue": "49",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D7": {
+              "text": "46310.0",
+              "type": "n",
+              "rawValue": "46310.0",
+              "numberFormat": "d/m",
+              "formula": null
+            },
+            "E7": {
+              "text": "Đang triển khai ",
+              "type": "s",
+              "rawValue": "50",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F7": {
+              "text": "Ban Chuyên Môn",
+              "type": "s",
+              "rawValue": "51",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 8,
+          "cells": {
+            "B8": {
+              "text": "Tìm Sân + Chốt Giờ đá",
+              "type": "s",
+              "rawValue": "52",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C8": {
+              "text": "Long Hoàng",
+              "type": "s",
+              "rawValue": "49",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E8": {
+              "text": "Đang triển khai ",
+              "type": "s",
+              "rawValue": "50",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 10,
+          "cells": {
+            "B10": {
+              "text": "Làm Nội quy CLB",
+              "type": "s",
+              "rawValue": "53",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C10": {
+              "text": "Tuấn dzaiii",
+              "type": "s",
+              "rawValue": "54",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E10": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 12,
+          "cells": {
+            "B12": {
+              "text": "Collapse FlyCam và chốt",
+              "type": "s",
+              "rawValue": "55",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C12": {
+              "text": "Thuy Pé Pỏng",
+              "type": "s",
+              "rawValue": "56",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E12": {
+              "text": "Đang triển khai ",
+              "type": "s",
+              "rawValue": "50",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 13,
+          "cells": {
+            "B13": {
+              "text": "Làm danh sách cầu thủ",
+              "type": "s",
+              "rawValue": "57",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C13": {
+              "text": "Thuy Pé Pỏng",
+              "type": "s",
+              "rawValue": "56",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E13": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 15,
+          "cells": {
+            "A15": {
+              "text": "Ban Quản lý đội / Hậu cần",
+              "type": "s",
+              "rawValue": "58",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B15": {
+              "text": "Y tế, tiện ích:",
+              "type": "s",
+              "rawValue": "59",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C15": {
+              "text": "Mỹ + Thúy",
+              "type": "s",
+              "rawValue": "60",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D15": {
+              "text": "46313.0",
+              "type": "n",
+              "rawValue": "46313.0",
+              "numberFormat": "d/m",
+              "formula": null
+            },
+            "E15": {
+              "text": "Đang triển khai ",
+              "type": "s",
+              "rawValue": "50",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F15": {
+              "text": "Ban Quản Lý Đội Bóng - Hậu Cần",
+              "type": "s",
+              "rawValue": "61",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 16,
+          "cells": {
+            "B16": {
+              "text": "Thuốc giảm đau.",
+              "type": "s",
+              "rawValue": "62",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C16": {
+              "text": "Mỹ + Thúy",
+              "type": "s",
+              "rawValue": "60",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D16": {
+              "text": "46313.0",
+              "type": "n",
+              "rawValue": "46313.0",
+              "numberFormat": "d/m",
+              "formula": null
+            },
+            "E16": {
+              "text": "Đang triển khai ",
+              "type": "s",
+              "rawValue": "50",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 17,
+          "cells": {
+            "B17": {
+              "text": "Bộ dụng cụ sơ cứu.",
+              "type": "s",
+              "rawValue": "63",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C17": {
+              "text": "Mỹ + Thúy",
+              "type": "s",
+              "rawValue": "60",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D17": {
+              "text": "46313.0",
+              "type": "n",
+              "rawValue": "46313.0",
+              "numberFormat": "d/m",
+              "formula": null
+            },
+            "E17": {
+              "text": "Đang triển khai ",
+              "type": "s",
+              "rawValue": "50",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 18,
+          "cells": {
+            "B18": {
+              "text": "Người giữ và đem bộ dụng cụ ra sân bóng.",
+              "type": "s",
+              "rawValue": "64",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C18": {
+              "text": "Mỹ + Thúy",
+              "type": "s",
+              "rawValue": "60",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D18": {
+              "text": "Theo lịch đá hằng tuần",
+              "type": "s",
+              "rawValue": "65",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E18": {
+              "text": "Đang triển khai ",
+              "type": "s",
+              "rawValue": "50",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 20,
+          "cells": {
+            "A20": {
+              "text": "Ban Tài chính",
+              "type": "s",
+              "rawValue": "66",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B20": {
+              "text": "Thu quỹ CLB (tháng đầu thu dự kiến 230k/1 người và các tháng sau sẽ cân đối sau).",
+              "type": "s",
+              "rawValue": "67",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C20": {
+              "text": "Mỹ",
+              "type": "s",
+              "rawValue": "68",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D20": {
+              "text": "46303.0",
+              "type": "n",
+              "rawValue": "46303.0",
+              "numberFormat": "dd/mm",
+              "formula": null
+            },
+            "E20": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F20": {
+              "text": "Ban Quản Lý Đội bóng",
+              "type": "s",
+              "rawValue": "69",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 21,
+          "cells": {
+            "B21": {
+              "text": "Tạo 1 link Sheet về dự trù kinh phí.",
+              "type": "s",
+              "rawValue": "71",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C21": {
+              "text": "Mỹ",
+              "type": "s",
+              "rawValue": "68",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D21": {
+              "text": "46307.0",
+              "type": "n",
+              "rawValue": "46307.0",
+              "numberFormat": "d/m",
+              "formula": null
+            },
+            "E21": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 22,
+          "cells": {
+            "B22": {
+              "text": "Lấy Bill và note lại vào tên ở bảng danh sách cầu thủ để confirm",
+              "type": "s",
+              "rawValue": "77",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C22": {
+              "text": "Thúy",
+              "type": "s",
+              "rawValue": "78",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D22": {
+              "text": "46310.0",
+              "type": "n",
+              "rawValue": "46310.0",
+              "numberFormat": "d/m",
+              "formula": null
+            },
+            "E22": {
+              "text": "Đang triển khai ",
+              "type": "s",
+              "rawValue": "50",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 23,
+          "cells": {
+            "B23": {
+              "text": "Confirm mọi người đóng đầy đủ hết và nhắc nhở đóng đủ",
+              "type": "s",
+              "rawValue": "82",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C23": {
+              "text": "Thúy + Mỹ",
+              "type": "s",
+              "rawValue": "83",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D23": {
+              "text": "46310.0",
+              "type": "n",
+              "rawValue": "46310.0",
+              "numberFormat": "d/m",
+              "formula": null
+            },
+            "E23": {
+              "text": "Đang triển khai ",
+              "type": "s",
+              "rawValue": "50",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 26,
+          "cells": {
+            "A26": {
+              "text": "Ban Quản Trị",
+              "type": "s",
+              "rawValue": "91",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B26": {
+              "text": "Tạo 1 link Sheet về:",
+              "type": "s",
+              "rawValue": "92",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C26": {
+              "text": "Mỹ",
+              "type": "s",
+              "rawValue": "68",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E26": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F26": {
+              "text": "Ban Quản Lý Đội Bóng",
+              "type": "s",
+              "rawValue": "94",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 27,
+          "cells": {
+            "B27": {
+              "text": "Chốt lại về số lượng + lọc lại HN - HCM",
+              "type": "s",
+              "rawValue": "100",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C27": {
+              "text": "Thúy + Mỹ",
+              "type": "s",
+              "rawValue": "83",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D27": {
+              "text": "46303.0",
+              "type": "n",
+              "rawValue": "46303.0",
+              "numberFormat": "dd/mm",
+              "formula": null
+            },
+            "E27": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 28,
+          "cells": {
+            "B28": {
+              "text": "Soạn 1 bản nội quy CLB và gửi lại vào nhóm.",
+              "type": "s",
+              "rawValue": "103",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C28": {
+              "text": "Thúy ",
+              "type": "s",
+              "rawValue": "104",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D28": {
+              "text": "46303.0",
+              "type": "n",
+              "rawValue": "46303.0",
+              "numberFormat": "dd/mm",
+              "formula": null
+            },
+            "E28": {
+              "text": "Đã xong ",
+              "type": "s",
+              "rawValue": "30",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Ban truyền thông ",
+      "path": "xl/worksheets/sheet2.xml",
+      "rows": []
+    },
+    {
+      "index": 3,
+      "name": "Ban chuyên môn",
+      "path": "xl/worksheets/sheet3.xml",
+      "rows": [
+        {
+          "row": 1,
+          "cells": {
+            "A1": {
+              "text": "SÂN BÓNG",
+              "type": "s",
+              "rawValue": "1",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B1": {
+              "text": "Lịch Đá",
+              "type": "s",
+              "rawValue": "3",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C1": {
+              "text": "Thời Gian",
+              "type": "s",
+              "rawValue": "4",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D1": {
+              "text": "Địa Điểm",
+              "type": "s",
+              "rawValue": "5",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E1": {
+              "text": "Giá Cả Thương Lượng",
+              "type": "s",
+              "rawValue": "6",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F1": {
+              "text": "Khảo Sát",
+              "type": "s",
+              "rawValue": "8",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G1": {
+              "text": "Chốt Deal",
+              "type": "s",
+              "rawValue": "9",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 2,
+          "cells": {
+            "A2": {
+              "text": "Sân Bóng Bắc Việt",
+              "type": "s",
+              "rawValue": "11",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B2": {
+              "text": "Thứ 5",
+              "type": "s",
+              "rawValue": "13",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C2": {
+              "text": "19h30 - 21h",
+              "type": "s",
+              "rawValue": "14",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F2": {
+              "text": "Chưa Khảo Sát",
+              "type": "s",
+              "rawValue": "16",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G2": {
+              "text": "0",
+              "type": "b",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 3,
+          "cells": {
+            "A3": {
+              "text": "Sân Bóng Trung Văn",
+              "type": "s",
+              "rawValue": "18",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B3": {
+              "text": "Thứ 5",
+              "type": "s",
+              "rawValue": "13",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C3": {
+              "text": "19h30 - 21h",
+              "type": "s",
+              "rawValue": "14",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F3": {
+              "text": "Chưa Khảo Sát",
+              "type": "s",
+              "rawValue": "16",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G3": {
+              "text": "0",
+              "type": "b",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 4,
+          "cells": {
+            "A4": {
+              "text": "Sân Bóng Phúc La",
+              "type": "s",
+              "rawValue": "19",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B4": {
+              "text": "Thứ 5",
+              "type": "s",
+              "rawValue": "13",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C4": {
+              "text": "19h30 - 21h",
+              "type": "s",
+              "rawValue": "14",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F4": {
+              "text": "Chưa Khảo Sát",
+              "type": "s",
+              "rawValue": "16",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G4": {
+              "text": "0",
+              "type": "b",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 5,
+          "cells": {
+            "A5": {
+              "text": "Sân Bóng Cường Quốc",
+              "type": "s",
+              "rawValue": "22",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B5": {
+              "text": "Thứ 5",
+              "type": "s",
+              "rawValue": "13",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C5": {
+              "text": "19h30 - 21h",
+              "type": "s",
+              "rawValue": "14",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F5": {
+              "text": "Chưa Khảo Sát",
+              "type": "s",
+              "rawValue": "16",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G5": {
+              "text": "0",
+              "type": "b",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 6,
+          "cells": {
+            "A6": {
+              "text": "Sân Bóng Hà Trì",
+              "type": "s",
+              "rawValue": "23",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B6": {
+              "text": "Thứ 5",
+              "type": "s",
+              "rawValue": "13",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C6": {
+              "text": "19h30 - 21h",
+              "type": "s",
+              "rawValue": "14",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F6": {
+              "text": "Chưa Khảo Sát",
+              "type": "s",
+              "rawValue": "16",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G6": {
+              "text": "0",
+              "type": "b",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 7,
+          "cells": {
+            "A7": {
+              "text": "Sân C500",
+              "type": "s",
+              "rawValue": "26",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B7": {
+              "text": "Thứ 5",
+              "type": "s",
+              "rawValue": "13",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C7": {
+              "text": "19h30 - 21h",
+              "type": "s",
+              "rawValue": "14",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F7": {
+              "text": "Chưa Khảo Sát",
+              "type": "s",
+              "rawValue": "16",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G7": {
+              "text": "0",
+              "type": "b",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 8,
+          "cells": {
+            "F8": {
+              "text": "Chưa Khảo Sát",
+              "type": "s",
+              "rawValue": "16",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G8": {
+              "text": "0",
+              "type": "b",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 9,
+          "cells": {
+            "F9": {
+              "text": "Chưa Khảo Sát",
+              "type": "s",
+              "rawValue": "16",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G9": {
+              "text": "0",
+              "type": "b",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 10,
+          "cells": {
+            "F10": {
+              "text": "Chưa Khảo Sát",
+              "type": "s",
+              "rawValue": "16",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G10": {
+              "text": "0",
+              "type": "b",
+              "rawValue": "0",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Ban quản lý đội ",
+      "path": "xl/worksheets/sheet4.xml",
+      "rows": []
+    },
+    {
+      "index": 5,
+      "name": "Ban tài chính ",
+      "path": "xl/worksheets/sheet5.xml",
+      "rows": [
+        {
+          "row": 1,
+          "cells": {
+            "A1": {
+              "text": "Hoạt động ",
+              "type": "s",
+              "rawValue": "21",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B1": {
+              "text": "Nội dung ",
+              "type": "s",
+              "rawValue": "24",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C1": {
+              "text": "Kinh phí",
+              "type": "s",
+              "rawValue": "27",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 12,
+          "cells": {
+            "A12": {
+              "text": "TỔNG HỢP KÊ KHAI CHI PHÍ",
+              "type": "s",
+              "rawValue": "33",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 13,
+          "cells": {
+            "A13": {
+              "text": "STT",
+              "type": "s",
+              "rawValue": "36",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B13": {
+              "text": "Tên hàng hóa",
+              "type": "s",
+              "rawValue": "38",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D13": {
+              "text": "ĐVT",
+              "type": "s",
+              "rawValue": "39",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E13": {
+              "text": "Số lượng",
+              "type": "s",
+              "rawValue": "40",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F13": {
+              "text": "Đơn giá",
+              "type": "s",
+              "rawValue": "41",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G13": {
+              "text": "Thành tiền",
+              "type": "s",
+              "rawValue": "42",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "H13": {
+              "text": "Thực chi",
+              "type": "s",
+              "rawValue": "44",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "J13": {
+              "text": "Ghi chú",
+              "type": "s",
+              "rawValue": "15",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 14,
+          "cells": {
+            "A14": {
+              "text": "HÀ NỘI",
+              "type": "s",
+              "rawValue": "46",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "NỘI QUY CLB",
+      "path": "xl/worksheets/sheet6.xml",
+      "rows": [
+        {
+          "row": 1,
+          "cells": {
+            "A1": {
+              "text": "NỘI QUY HOẠT ĐỘNG CHI TIẾT - CLB BÓNG ĐÁ PTIT x RIKKEI",
+              "type": "s",
+              "rawValue": "17",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 2,
+          "cells": {
+            "A2": {
+              "text": "   PHẦN I: TÔN CHỈ, MỤC ĐÍCH VÀ ĐỐI TƯỢNG THAM GIA\n  1. Tôn chỉ hoạt động\nSức khỏe & Gắn kết: Xây dựng môi trường rèn luyện thể chất lành mạnh, kết nối các sinh viên/thành viên hệ PTIT x Rikkei sau giờ học tập và làm việc căng thẳng.\nChuyên nghiệp & Văn minh: Đề cao tinh thần kỷ luật, tôn trọng lẫn nhau, fair-play và xây dựng hình ảnh đẹp cho thương hiệu chung PTIT x Rikkei.\n   2. Tiêu chuẩn thành viên\nLà sinh viên, học viên, cựu học viên hoặc nhân sự thuộc hệ thống đào tạo PTIT x Rikkei.\nCó đam mê bóng đá, có sức khỏe tốt để đảm bảo tham gia các buổi tập luyện và thi đấu.\nCam kết tuân thủ tuyệt đối nội quy và các quyết định của Ban Chủ nhiệm (BCN).\n   PHẦN II: QUY ĐỊNH VỀ TẬP LUYỆN VÀ THI ĐẤU\n  1. Thời gian \nCó mặt đúng giờ: Thành viên có mặt tại sân trước giờ bóng lăn ít nhất 15 phút để thay trang phục, khởi động kỹ và nghe phổ biến chiến thuật.\nTrước hôm đá sẽ có một lần vote để mọi người xác nhận tham gia \n\nCheck-in trực tiếp tại sân:\nKhi đến sân, thành viên phải tiến hành điểm danh trực tiếp với người phụ trách (Đội trưởng/Thủ quỹ/Thư ký CLB) trước khi vào sân khởi động.\nThời gian chốt điểm danh trực tiếp tính đến đúng giờ quy định bắt đầu buổi tập\n  2. Phân loại trạng thái và Quy định xử lý\nTham gia (Có mặt): Đã đăng ký có mặt nhưng đến muộn quá 15 phút so với giờ quy định mà không báo trước \n\nKhông phản hồi (No-response): Thành viên lơ là không bấm điểm danh và không có mặt tại sân  Tính là Vắng không phép. Tích lũy lỗi này quá số lần quy định sẽ bị xem xét cắt quyền đăng ký tham gia các trận đấu quan trọng.\n\n  3. Trang phục và Dụng cụ\nTrang phục:\nChúng ta sẽ mặc áo pitch để tham gia sinh hoạt cho đến khi nào có đồng phục\nMặc đúng áo đồng phục của CLB trong các trận đấu chính thức hoặc giao hữu quan trọng.\nCác buổi tập thường ngày mặc trang phục thể thao thoải mái, gọn gàng.\nGiày và phụ kiện: Bắt buộc mang giày đá bóng phù hợp (giày đinh tán nhựa FG/AG hoặc đinh dăm TF tùy mặt sân). Khuyến khích mang bọc ống đồng (bảo vệ cổ chân) để tránh chấn thương cho bản thân và bạn đồng hành.\n   PHẦN III: QUY ĐỊNH VỀ TÀI CHÍNH VÀ QUỸ CÂU LẠC BỘ\n  1. Đóng góp quỹ định kỳ\nMức đóng: Quỹ CLB được đóng theo tháng hoặc theo quý (Mức cụ thể do BCN và các thành viên thống nhất dựa trên chi phí thuê sân thực tế tại khu vực).\nHạn nộp: Hoàn thành đóng quỹ trong vòng 10 ngày đầu tháng\nThành viên mới: Được tham gia thử sức 1 - 2 buổi đầu tiên. Nếu quyết định gia nhập chính thức phải đóng quỹ tính từ tháng đó.\n  2. Quỹ phát sinh và Thi đấu\nTiền thuê sân đá giao hữu với các đối tác bên ngoài sẽ được chia đều cho tổng số thành viên tham gia trận đấu đó (hoặc trích quỹ CLB tùy theo sự thống nhất trước của đại hội thành viên).\nCác khoản thu - chi phát sinh (nước uống, y tế, bóng đá, tiền giải đấu...) sẽ được Thủ quỹ tổng hợp và công khai minh bạch trên bảng thu chi của nhóm vào cuối mỗi tháng.\n   PHẦN IV: ĐẠO ĐỨC SÂN CỎ VÀ KỶ LUẬT NỘI BỘ\n  1. Quy tắc ứng xử (Fair-play)\nTuyệt đối nghiêm cấm:\nCác hành vi bạo lực sân cỏ: cố tình đá xấu, xoạc bóng nguy hiểm, đấm/đánh, xô xát với đối thủ hoặc đồng đội. Người vi phạm sẽ phải chịu trách nhiệm hoàn toàn với người bị hại. Nếu hành vi đó liên quan đến pháp luật thì người vi phạm sẽ chịu hoàn toàn trước pháp luật\nCó lời lẽ lăng mạ, chửi bới, phân biệt vùng miền,đối thủ hoặc các thành viên trong CLB.\nSử dụng chất kích thích, đồ uống có cồn (rượu, bia) hoặc chất cấm trước và trong khi tham gia tập luyện, thi đấu (đảm bảo tỉnh táo và an toàn thể lực).\n  2 . Xử lý vi phạm kỷ luật\nVi phạm lần 1: Nhắc nhở trực tiếp\nVi phạm lặp lại nhiều lần: Cắt giảm quyền hình thành đội hình thi đấu chính thức trong các trận quan trọng.\nVi phạm nghiêm trọng (Đánh nhau, gây mất đoàn kết trầm trọng, làm tổn hại uy tín PTIT x Rikkei): BCN có quyền khai trừ vĩnh viễn khỏi danh sách thành viên CLB ngay lập tức mà không hoàn lại quỹ đã đóng.\n   PHẦN V: CƠ CẤU TỔ CHỨC VÀ QUYỀN HỢP TÁC\nBan Chủ nhiệm (BCN): Gồm Đội trưởng (chịu trách nhiệm chiến thuật, chuyên môn), Đội phó / Quản lý hậu cần (sân bãi, trang thiết bị) và Thủ quỹ (tài chính). BCN có quyền quyết định xử lý khủng hoảng.\nQuyền lợi thành viên:\nĐược rèn luyện sức khỏe trong môi trường năng động, văn minh.\nĐược ưu tiên tham gia các giải đấu thể thao sinh viên, giải giao hữu do PTIT x Rikkei tổ chức hoặc tài trợ.\nĐược nhận sự hỗ trợ về y tế sơ cấp cứu cơ bản từ quỹ CLB khi gặp chấn thương trong lúc sinh hoạt cùng đội.\nĐược gắn kết cùng các bạn trong hệ \nĐược có ảnh mang về tất cả cả các trận mình tham gia",
+              "type": "s",
+              "rawValue": "29",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Danh sách thành viên CLB Bóng đ",
+      "path": "xl/worksheets/sheet7.xml",
+      "rows": [
+        {
+          "row": 3,
+          "cells": {
+            "A3": {
+              "text": "STT",
+              "type": "s",
+              "rawValue": "36",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B3": {
+              "text": "Họ và tên",
+              "type": "s",
+              "rawValue": "70",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C3": {
+              "text": "Lớp",
+              "type": "s",
+              "rawValue": "72",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D3": {
+              "text": "Vị trí thi đấu",
+              "type": "s",
+              "rawValue": "73",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E3": {
+              "text": "Tình trạng tham gia",
+              "type": "s",
+              "rawValue": "74",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F3": {
+              "text": "Ghi chú",
+              "type": "s",
+              "rawValue": "15",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G3": {
+              "text": "Đóng quỹ",
+              "type": "s",
+              "rawValue": "75",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "H3": {
+              "text": "Ghi chú 2",
+              "type": "s",
+              "rawValue": "76",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "I3": {
+              "text": "Ảnh bill",
+              "type": "s",
+              "rawValue": "79",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 4,
+          "cells": {
+            "A4": {
+              "text": "1.0",
+              "type": "n",
+              "rawValue": "1.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B4": {
+              "text": "Mai Đức Thuy",
+              "type": "s",
+              "rawValue": "80",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C4": {
+              "text": "CNTT5",
+              "type": "s",
+              "rawValue": "81",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D4": {
+              "text": "Tiền Đạo , Quản Lý Đội",
+              "type": "s",
+              "rawValue": "84",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E4": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G4": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 5,
+          "cells": {
+            "A5": {
+              "text": "2.0",
+              "type": "n",
+              "rawValue": "2.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B5": {
+              "text": "Lưu Anh Tuấn",
+              "type": "s",
+              "rawValue": "88",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C5": {
+              "text": "QTKD1",
+              "type": "s",
+              "rawValue": "89",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D5": {
+              "text": "Tiền vệ ,Quản Lý Đội",
+              "type": "s",
+              "rawValue": "90",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E5": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G5": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 6,
+          "cells": {
+            "A6": {
+              "text": "3.0",
+              "type": "n",
+              "rawValue": "3.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B6": {
+              "text": "Mai Thế Bảo Quân",
+              "type": "s",
+              "rawValue": "101",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C6": {
+              "text": "QTKD2/K26",
+              "type": "s",
+              "rawValue": "105",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D6": {
+              "text": "Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "106",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E6": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G6": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 7,
+          "cells": {
+            "A7": {
+              "text": "4.0",
+              "type": "n",
+              "rawValue": "4.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B7": {
+              "text": "Phan Công Minh Khôi",
+              "type": "s",
+              "rawValue": "109",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C7": {
+              "text": "HN-K26-KTKD2",
+              "type": "s",
+              "rawValue": "110",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D7": {
+              "text": "Hậu Vệ",
+              "type": "s",
+              "rawValue": "111",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E7": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G7": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 8,
+          "cells": {
+            "A8": {
+              "text": "5.0",
+              "type": "n",
+              "rawValue": "5.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B8": {
+              "text": "Trần Minh Tiến",
+              "type": "s",
+              "rawValue": "112",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C8": {
+              "text": "CNTT2-D26",
+              "type": "s",
+              "rawValue": "113",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D8": {
+              "text": "Hậu Vệ, Tiền Vệ",
+              "type": "s",
+              "rawValue": "114",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E8": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G8": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 9,
+          "cells": {
+            "A9": {
+              "text": "6.0",
+              "type": "n",
+              "rawValue": "6.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B9": {
+              "text": "Đặng Viết Hoàng Anh",
+              "type": "s",
+              "rawValue": "115",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C9": {
+              "text": "CNTT2-K25",
+              "type": "s",
+              "rawValue": "116",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D9": {
+              "text": "Hậu Vệ",
+              "type": "s",
+              "rawValue": "111",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E9": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G9": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 10,
+          "cells": {
+            "A10": {
+              "text": "7.0",
+              "type": "n",
+              "rawValue": "7.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B10": {
+              "text": "Đặng Gia Hưng",
+              "type": "s",
+              "rawValue": "118",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C10": {
+              "text": "K25",
+              "type": "s",
+              "rawValue": "119",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D10": {
+              "text": "Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "120",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E10": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G10": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 11,
+          "cells": {
+            "A11": {
+              "text": "8.0",
+              "type": "n",
+              "rawValue": "8.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B11": {
+              "text": "Hoàng Văn Trái",
+              "type": "s",
+              "rawValue": "122",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C11": {
+              "text": "lớp CNTT-K26",
+              "type": "s",
+              "rawValue": "124",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D11": {
+              "text": "Tiền Vệ",
+              "type": "s",
+              "rawValue": "125",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E11": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G11": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 12,
+          "cells": {
+            "A12": {
+              "text": "9.0",
+              "type": "n",
+              "rawValue": "9.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B12": {
+              "text": "Đỗ Duy Trường",
+              "type": "s",
+              "rawValue": "127",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C12": {
+              "text": "QTKD-02-D25",
+              "type": "s",
+              "rawValue": "128",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D12": {
+              "text": "Hậu Vệ",
+              "type": "s",
+              "rawValue": "111",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E12": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G12": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 13,
+          "cells": {
+            "A13": {
+              "text": "10.0",
+              "type": "n",
+              "rawValue": "10.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B13": {
+              "text": "Trần Đình Phú",
+              "type": "s",
+              "rawValue": "129",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C13": {
+              "text": "CNTT1",
+              "type": "s",
+              "rawValue": "130",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D13": {
+              "text": "Tiền Vệ",
+              "type": "s",
+              "rawValue": "125",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E13": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G13": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 14,
+          "cells": {
+            "A14": {
+              "text": "11.0",
+              "type": "n",
+              "rawValue": "11.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B14": {
+              "text": "Trần Quang Minh",
+              "type": "s",
+              "rawValue": "134",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C14": {
+              "text": "QTKD 2",
+              "type": "s",
+              "rawValue": "136",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D14": {
+              "text": "Thủ Môn, Hậu Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "137",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E14": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G14": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 15,
+          "cells": {
+            "A15": {
+              "text": "12.0",
+              "type": "n",
+              "rawValue": "12.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B15": {
+              "text": "Đặng Kiên Quyết",
+              "type": "s",
+              "rawValue": "141",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C15": {
+              "text": "K25-CNTT5",
+              "type": "s",
+              "rawValue": "142",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D15": {
+              "text": "Hậu Vệ, Tiền Vệ, Tiền Đạo, Quản Lý Đội",
+              "type": "s",
+              "rawValue": "145",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E15": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G15": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 16,
+          "cells": {
+            "A16": {
+              "text": "13.0",
+              "type": "n",
+              "rawValue": "13.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B16": {
+              "text": "Nguyễn Đức Nhật Minh",
+              "type": "s",
+              "rawValue": "148",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C16": {
+              "text": "D26TXCN03-N/K26",
+              "type": "s",
+              "rawValue": "149",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D16": {
+              "text": "Tiền Vệ",
+              "type": "s",
+              "rawValue": "125",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E16": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G16": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 17,
+          "cells": {
+            "A17": {
+              "text": "14.0",
+              "type": "n",
+              "rawValue": "14.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B17": {
+              "text": "Trần Võ Huy Thành",
+              "type": "s",
+              "rawValue": "150",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C17": {
+              "text": "K25-QTKD2",
+              "type": "s",
+              "rawValue": "151",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D17": {
+              "text": "Hậu Vệ",
+              "type": "s",
+              "rawValue": "111",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E17": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G17": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 18,
+          "cells": {
+            "A18": {
+              "text": "15.0",
+              "type": "n",
+              "rawValue": "15.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B18": {
+              "text": "Vũ Đình Bình",
+              "type": "s",
+              "rawValue": "152",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C18": {
+              "text": "CNTT2 K26",
+              "type": "s",
+              "rawValue": "153",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D18": {
+              "text": "Hậu Vệ, Tiền Vệ",
+              "type": "s",
+              "rawValue": "114",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E18": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G18": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 19,
+          "cells": {
+            "A19": {
+              "text": "16.0",
+              "type": "n",
+              "rawValue": "16.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B19": {
+              "text": "Phạm Tuấn Anh",
+              "type": "s",
+              "rawValue": "154",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C19": {
+              "text": "CNTT2 / K26",
+              "type": "s",
+              "rawValue": "155",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D19": {
+              "text": "Hậu Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "156",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E19": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G19": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 20,
+          "cells": {
+            "A20": {
+              "text": "17.0",
+              "type": "n",
+              "rawValue": "17.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B20": {
+              "text": "Đỗ Nhật Huy",
+              "type": "s",
+              "rawValue": "157",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C20": {
+              "text": "QTKD03",
+              "type": "s",
+              "rawValue": "158",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D20": {
+              "text": "Hậu Vệ, Tiền Vệ",
+              "type": "s",
+              "rawValue": "114",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E20": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G20": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 21,
+          "cells": {
+            "A21": {
+              "text": "18.0",
+              "type": "n",
+              "rawValue": "18.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B21": {
+              "text": "Nguyễn Hồng Vũ",
+              "type": "s",
+              "rawValue": "159",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C21": {
+              "text": "CNTT1/K26",
+              "type": "s",
+              "rawValue": "160",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D21": {
+              "text": "Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "106",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E21": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G21": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 22,
+          "cells": {
+            "A22": {
+              "text": "19.0",
+              "type": "n",
+              "rawValue": "19.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B22": {
+              "text": "Nguyễn Tấn Dũng",
+              "type": "s",
+              "rawValue": "161",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C22": {
+              "text": "KS25-CNTT1",
+              "type": "s",
+              "rawValue": "162",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D22": {
+              "text": "Hậu Vệ",
+              "type": "s",
+              "rawValue": "111",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E22": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G22": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 23,
+          "cells": {
+            "A23": {
+              "text": "20.0",
+              "type": "n",
+              "rawValue": "20.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B23": {
+              "text": "Cáp Văn Mạnh Duy",
+              "type": "s",
+              "rawValue": "163",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C23": {
+              "text": "lớp qtkd1 k26",
+              "type": "s",
+              "rawValue": "164",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D23": {
+              "text": "Tiền Vệ",
+              "type": "s",
+              "rawValue": "125",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E23": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G23": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 24,
+          "cells": {
+            "A24": {
+              "text": "21.0",
+              "type": "n",
+              "rawValue": "21.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B24": {
+              "text": "Nguyễn Thiện Tân",
+              "type": "s",
+              "rawValue": "165",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C24": {
+              "text": "cntt2 k26",
+              "type": "s",
+              "rawValue": "166",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D24": {
+              "text": "Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "120",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E24": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G24": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 25,
+          "cells": {
+            "A25": {
+              "text": "22.0",
+              "type": "n",
+              "rawValue": "22.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B25": {
+              "text": "Nguyễn Anh Tuấn",
+              "type": "s",
+              "rawValue": "167",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C25": {
+              "text": "QTKD1",
+              "type": "s",
+              "rawValue": "89",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D25": {
+              "text": "Thủ Môn, Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "168",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E25": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G25": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 26,
+          "cells": {
+            "A26": {
+              "text": "23.0",
+              "type": "n",
+              "rawValue": "23.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B26": {
+              "text": "Tạ Đình Nam Khánh",
+              "type": "s",
+              "rawValue": "169",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C26": {
+              "text": "HN-KS26-CNTT3",
+              "type": "s",
+              "rawValue": "170",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D26": {
+              "text": "Thủ Môn",
+              "type": "s",
+              "rawValue": "171",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E26": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G26": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 27,
+          "cells": {
+            "A27": {
+              "text": "24.0",
+              "type": "n",
+              "rawValue": "24.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B27": {
+              "text": "Đỗ Phạm Gia Hiếu",
+              "type": "s",
+              "rawValue": "172",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C27": {
+              "text": "D26TXCN06-B / cntt d26",
+              "type": "s",
+              "rawValue": "173",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D27": {
+              "text": "Tiền Vệ",
+              "type": "s",
+              "rawValue": "125",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E27": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G27": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 28,
+          "cells": {
+            "A28": {
+              "text": "25.0",
+              "type": "n",
+              "rawValue": "25.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B28": {
+              "text": "Lê Hồng Quân",
+              "type": "s",
+              "rawValue": "174",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C28": {
+              "text": "HN/CNTT2-K26",
+              "type": "s",
+              "rawValue": "175",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D28": {
+              "text": "Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "106",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E28": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G28": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 29,
+          "cells": {
+            "A29": {
+              "text": "26.0",
+              "type": "n",
+              "rawValue": "26.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B29": {
+              "text": "Lê Đức Hiếu",
+              "type": "s",
+              "rawValue": "176",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C29": {
+              "text": "QTKD3-k26",
+              "type": "s",
+              "rawValue": "177",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D29": {
+              "text": "Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "106",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E29": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G29": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 30,
+          "cells": {
+            "A30": {
+              "text": "27.0",
+              "type": "n",
+              "rawValue": "27.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B30": {
+              "text": "Phạm Nhật Anh",
+              "type": "s",
+              "rawValue": "178",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C30": {
+              "text": "D26",
+              "type": "s",
+              "rawValue": "179",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D30": {
+              "text": "Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "106",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E30": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G30": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 31,
+          "cells": {
+            "A31": {
+              "text": "28.0",
+              "type": "n",
+              "rawValue": "28.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B31": {
+              "text": "Phạm Quốc Khánh",
+              "type": "s",
+              "rawValue": "180",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C31": {
+              "text": "CNTT5-K25",
+              "type": "s",
+              "rawValue": "181",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D31": {
+              "text": "Hậu Vệ, Tiền Vệ",
+              "type": "s",
+              "rawValue": "114",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E31": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G31": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 32,
+          "cells": {
+            "A32": {
+              "text": "29.0",
+              "type": "n",
+              "rawValue": "29.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B32": {
+              "text": "Triệu Kim Hoàng",
+              "type": "s",
+              "rawValue": "182",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C32": {
+              "text": "HN-K26-QTKD1",
+              "type": "s",
+              "rawValue": "183",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D32": {
+              "text": "Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "120",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E32": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G32": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 33,
+          "cells": {
+            "A33": {
+              "text": "30.0",
+              "type": "n",
+              "rawValue": "30.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B33": {
+              "text": "Lê Duy Minh",
+              "type": "s",
+              "rawValue": "184",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C33": {
+              "text": "CNTT1-K24",
+              "type": "s",
+              "rawValue": "185",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D33": {
+              "text": "Tiền Vệ, Tiền Đạo, Quản Lý Đội",
+              "type": "s",
+              "rawValue": "186",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E33": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G33": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 34,
+          "cells": {
+            "A34": {
+              "text": "31.0",
+              "type": "n",
+              "rawValue": "31.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B34": {
+              "text": "Nguyễn Minh Đức",
+              "type": "s",
+              "rawValue": "187",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C34": {
+              "text": "CNTT1 K25",
+              "type": "s",
+              "rawValue": "188",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D34": {
+              "text": "Tiền Đạo",
+              "type": "s",
+              "rawValue": "189",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E34": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G34": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 35,
+          "cells": {
+            "A35": {
+              "text": "32.0",
+              "type": "n",
+              "rawValue": "32.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B35": {
+              "text": "Thân Văn Minh Tuyến",
+              "type": "s",
+              "rawValue": "190",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C35": {
+              "text": "K25",
+              "type": "s",
+              "rawValue": "119",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D35": {
+              "text": "Hậu Vệ, Tiền Vệ",
+              "type": "s",
+              "rawValue": "114",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E35": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G35": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 36,
+          "cells": {
+            "A36": {
+              "text": "33.0",
+              "type": "n",
+              "rawValue": "33.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B36": {
+              "text": "Đỗ An Khang",
+              "type": "s",
+              "rawValue": "192",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C36": {
+              "text": "K26 - QTKD2",
+              "type": "s",
+              "rawValue": "194",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D36": {
+              "text": "Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "120",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E36": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G36": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 37,
+          "cells": {
+            "A37": {
+              "text": "34.0",
+              "type": "n",
+              "rawValue": "34.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B37": {
+              "text": "Phạm Viết Toàn",
+              "type": "s",
+              "rawValue": "195",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C37": {
+              "text": "CNTT3-K26",
+              "type": "s",
+              "rawValue": "196",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D37": {
+              "text": "Hậu Vệ",
+              "type": "s",
+              "rawValue": "111",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E37": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G37": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 38,
+          "cells": {
+            "A38": {
+              "text": "35.0",
+              "type": "n",
+              "rawValue": "35.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B38": {
+              "text": "Nguyễn Minh Tùng",
+              "type": "s",
+              "rawValue": "198",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C38": {
+              "text": "HN-KS26-CNTT3",
+              "type": "s",
+              "rawValue": "170",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D38": {
+              "text": "Tiền Đạo",
+              "type": "s",
+              "rawValue": "189",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E38": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G38": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 39,
+          "cells": {
+            "A39": {
+              "text": "36.0",
+              "type": "n",
+              "rawValue": "36.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B39": {
+              "text": "Nguyễn Đình Mạnh",
+              "type": "s",
+              "rawValue": "200",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C39": {
+              "text": "QTKD1/k26",
+              "type": "s",
+              "rawValue": "201",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D39": {
+              "text": "Tiền Đạo",
+              "type": "s",
+              "rawValue": "189",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E39": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G39": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 40,
+          "cells": {
+            "A40": {
+              "text": "37.0",
+              "type": "n",
+              "rawValue": "37.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B40": {
+              "text": "Nguyễn Thành Huy",
+              "type": "s",
+              "rawValue": "204",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C40": {
+              "text": "Chưa cập nhật",
+              "type": "s",
+              "rawValue": "205",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D40": {
+              "text": "Hậu Cần",
+              "type": "s",
+              "rawValue": "206",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E40": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G40": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 41,
+          "cells": {
+            "A41": {
+              "text": "38.0",
+              "type": "n",
+              "rawValue": "38.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B41": {
+              "text": "Nguyễn Hoàng An",
+              "type": "s",
+              "rawValue": "208",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C41": {
+              "text": "K25 CNTT5",
+              "type": "s",
+              "rawValue": "209",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D41": {
+              "text": "Thủ Môn, Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "168",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E41": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G41": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 42,
+          "cells": {
+            "A42": {
+              "text": "39.0",
+              "type": "n",
+              "rawValue": "39.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B42": {
+              "text": "Hoàng Phúc Hiếu",
+              "type": "s",
+              "rawValue": "210",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C42": {
+              "text": "CNTT5-K25",
+              "type": "s",
+              "rawValue": "181",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D42": {
+              "text": "Thủ Môn, Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "168",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E42": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G42": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 43,
+          "cells": {
+            "A43": {
+              "text": "40.0",
+              "type": "n",
+              "rawValue": "40.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B43": {
+              "text": "Đào Minh Hiếu",
+              "type": "s",
+              "rawValue": "213",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C43": {
+              "text": "D26TXQT05-B",
+              "type": "s",
+              "rawValue": "214",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D43": {
+              "text": "Hậu Vệ, Hậu Cần",
+              "type": "s",
+              "rawValue": "215",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E43": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G43": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 44,
+          "cells": {
+            "A44": {
+              "text": "41.0",
+              "type": "n",
+              "rawValue": "41.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B44": {
+              "text": "Nguyễn Trung Thành",
+              "type": "s",
+              "rawValue": "217",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C44": {
+              "text": "cntt3 k26",
+              "type": "s",
+              "rawValue": "218",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D44": {
+              "text": "Thủ Môn, Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "168",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E44": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G44": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 45,
+          "cells": {
+            "A45": {
+              "text": "42.0",
+              "type": "n",
+              "rawValue": "42.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B45": {
+              "text": "Phan Văn Đạt",
+              "type": "s",
+              "rawValue": "219",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C45": {
+              "text": "CNTT1-K24",
+              "type": "s",
+              "rawValue": "185",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D45": {
+              "text": "Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "120",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E45": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G45": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 46,
+          "cells": {
+            "A46": {
+              "text": "43.0",
+              "type": "n",
+              "rawValue": "43.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B46": {
+              "text": "Phạm Gia Bảo",
+              "type": "s",
+              "rawValue": "221",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C46": {
+              "text": "CNTT1-K26",
+              "type": "s",
+              "rawValue": "222",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D46": {
+              "text": "Tiền Vệ",
+              "type": "s",
+              "rawValue": "125",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E46": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G46": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 47,
+          "cells": {
+            "A47": {
+              "text": "44.0",
+              "type": "n",
+              "rawValue": "44.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B47": {
+              "text": "Hồ Mạnh Duy",
+              "type": "s",
+              "rawValue": "223",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C47": {
+              "text": "QTKD2-K25",
+              "type": "s",
+              "rawValue": "224",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D47": {
+              "text": "Thủ Môn, Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "168",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E47": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G47": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 48,
+          "cells": {
+            "A48": {
+              "text": "45.0",
+              "type": "n",
+              "rawValue": "45.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B48": {
+              "text": "Phạm Danh Quốc Anh",
+              "type": "s",
+              "rawValue": "225",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C48": {
+              "text": "HN-KS25-CNTT4",
+              "type": "s",
+              "rawValue": "226",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D48": {
+              "text": "Hậu Vệ, Tiền Vệ, Tiền Đạo",
+              "type": "s",
+              "rawValue": "120",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E48": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G48": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 49,
+          "cells": {
+            "A49": {
+              "text": "46.0",
+              "type": "n",
+              "rawValue": "46.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B49": {
+              "text": "Nguyễn Phạm Vĩnh Thành",
+              "type": "s",
+              "rawValue": "227",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C49": {
+              "text": "K24",
+              "type": "s",
+              "rawValue": "228",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D49": {
+              "text": "Hậu Vệ",
+              "type": "s",
+              "rawValue": "111",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E49": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G49": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 50,
+          "cells": {
+            "A50": {
+              "text": "47.0",
+              "type": "n",
+              "rawValue": "47.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B50": {
+              "text": "Phạm Anh Quân",
+              "type": "s",
+              "rawValue": "230",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C50": {
+              "text": "K26",
+              "type": "s",
+              "rawValue": "231",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D50": {
+              "text": "Hậu Vệ",
+              "type": "s",
+              "rawValue": "111",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E50": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G50": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 51,
+          "cells": {
+            "A51": {
+              "text": "48.0",
+              "type": "n",
+              "rawValue": "48.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B51": {
+              "text": "Đào Nguyễn Lâm Hoàng",
+              "type": "s",
+              "rawValue": "232",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C51": {
+              "text": "CNTT5",
+              "type": "s",
+              "rawValue": "81",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D51": {
+              "text": "Thủ Môn",
+              "type": "s",
+              "rawValue": "171",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E51": {
+              "text": "Sẵn sàng",
+              "type": "s",
+              "rawValue": "85",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G51": {
+              "text": "Đã đóng ",
+              "type": "s",
+              "rawValue": "86",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 52,
+          "cells": {
+            "A52": {
+              "text": "49.0",
+              "type": "n",
+              "rawValue": "49.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B52": {
+              "text": "Trần Đức Hùng",
+              "type": "s",
+              "rawValue": "234",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C52": {
+              "text": "HN-QTKD1",
+              "type": "s",
+              "rawValue": "235",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D52": {
+              "text": "Truyền Thông",
+              "type": "s",
+              "rawValue": "236",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E52": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G52": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 53,
+          "cells": {
+            "A53": {
+              "text": "50.0",
+              "type": "n",
+              "rawValue": "50.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B53": {
+              "text": "Đặng Quang Hưng",
+              "type": "s",
+              "rawValue": "237",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C53": {
+              "text": "CNTT2",
+              "type": "s",
+              "rawValue": "238",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D53": {
+              "text": "Truyền Thông",
+              "type": "s",
+              "rawValue": "236",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E53": {
+              "text": "Chờ xác nhận",
+              "type": "s",
+              "rawValue": "107",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G53": {
+              "text": "Chưa đóng ",
+              "type": "s",
+              "rawValue": "108",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Dự trù chi phí",
+      "path": "xl/worksheets/sheet8.xml",
+      "rows": [
+        {
+          "row": 1,
+          "cells": {
+            "A1": {
+              "text": "BẢNG DỰ TRÙ CHI PHÍ HOẠT ĐỘNG – CLB BÓNG ĐÁ CƠ SỞ HÀ NỘI",
+              "type": "s",
+              "rawValue": "87",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 3,
+          "cells": {
+            "A3": {
+              "text": "Hạng mục",
+              "type": "s",
+              "rawValue": "93",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B3": {
+              "text": "Số lượng",
+              "type": "s",
+              "rawValue": "40",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C3": {
+              "text": "Đơn vị",
+              "type": "s",
+              "rawValue": "95",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D3": {
+              "text": "Đơn giá dự kiến",
+              "type": "s",
+              "rawValue": "96",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E3": {
+              "text": "Thành tiền",
+              "type": "s",
+              "rawValue": "42",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "F3": {
+              "text": "Một lần/định kỳ",
+              "type": "s",
+              "rawValue": "97",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G3": {
+              "text": "Người phụ trách",
+              "type": "s",
+              "rawValue": "98",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "H3": {
+              "text": "Ghi chú",
+              "type": "s",
+              "rawValue": "15",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 4,
+          "cells": {
+            "A4": {
+              "text": "Thuê sân bóng theo lịch đá hằng tuần",
+              "type": "s",
+              "rawValue": "99",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B4": {
+              "text": "4.0",
+              "type": "n",
+              "rawValue": "4.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C4": {
+              "text": "Buổi",
+              "type": "s",
+              "rawValue": "102",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D4": {
+              "text": "700000.0",
+              "type": "n",
+              "rawValue": "700000.0",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": null
+            },
+            "E4": {
+              "text": "2800000",
+              "type": "n",
+              "rawValue": "2800000",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": "IF(AND(ISNUMBER(B4), ISNUMBER(D4)), B4*D4, \"Cần xác nhận\")"
+            },
+            "F4": {
+              "text": "Định kỳ",
+              "type": "s",
+              "rawValue": "117",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G4": {
+              "text": "Long Hoàng",
+              "type": "s",
+              "rawValue": "49",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "H4": {
+              "text": "Lịch đá cố định tối Thứ 5 (19h30 - 21h00)",
+              "type": "s",
+              "rawValue": "121",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 5,
+          "cells": {
+            "A5": {
+              "text": "Thuốc giảm đau (bình xịt chấn thương)",
+              "type": "s",
+              "rawValue": "123",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B5": {
+              "text": "2.0",
+              "type": "n",
+              "rawValue": "2.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C5": {
+              "text": "Chai",
+              "type": "s",
+              "rawValue": "126",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D5": {
+              "text": "100000.0",
+              "type": "n",
+              "rawValue": "100000.0",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": null
+            },
+            "E5": {
+              "text": "200000",
+              "type": "n",
+              "rawValue": "200000",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": null
+            },
+            "F5": {
+              "text": "Dự phòng",
+              "type": "s",
+              "rawValue": "131",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G5": {
+              "text": "Mỹ + Thúy",
+              "type": "s",
+              "rawValue": "60",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "H5": {
+              "text": "Bình xịt lạnh giảm đau tức thời khi thi đấu",
+              "type": "s",
+              "rawValue": "132",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 6,
+          "cells": {
+            "A6": {
+              "text": "Bộ dụng cụ sơ cứu y tế",
+              "type": "s",
+              "rawValue": "133",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B6": {
+              "text": "2.0",
+              "type": "n",
+              "rawValue": "2.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C6": {
+              "text": "Bộ",
+              "type": "s",
+              "rawValue": "135",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D6": {
+              "text": "100000.0",
+              "type": "n",
+              "rawValue": "100000.0",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": null
+            },
+            "E6": {
+              "text": "200000",
+              "type": "n",
+              "rawValue": "200000",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": null
+            },
+            "F6": {
+              "text": "Một lần",
+              "type": "s",
+              "rawValue": "138",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G6": {
+              "text": "Mỹ + Thúy",
+              "type": "s",
+              "rawValue": "60",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "H6": {
+              "text": "Băng gạc, gạc vô trùng, cồn đỏ, băng gâu",
+              "type": "s",
+              "rawValue": "139",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 7,
+          "cells": {
+            "A7": {
+              "text": "Chi phí FlyCam (nếu có phát sinh)",
+              "type": "s",
+              "rawValue": "140",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "B7": {
+              "text": "1.0",
+              "type": "n",
+              "rawValue": "1.0",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C7": {
+              "text": "Buổi",
+              "type": "s",
+              "rawValue": "102",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D7": {
+              "text": "400000.0",
+              "type": "n",
+              "rawValue": "400000.0",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": null
+            },
+            "E7": {
+              "text": "400000",
+              "type": "n",
+              "rawValue": "400000",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": null
+            },
+            "F7": {
+              "text": "Phát sinh",
+              "type": "s",
+              "rawValue": "143",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "G7": {
+              "text": "Đăng",
+              "type": "s",
+              "rawValue": "144",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "H7": {
+              "text": "Ghi hình tư liệu truyền thông các trận",
+              "type": "s",
+              "rawValue": "146",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 8,
+          "cells": {
+            "A8": {
+              "text": "Tổng chi phí dự kiến",
+              "type": "s",
+              "rawValue": "147",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E8": {
+              "text": "3600000",
+              "type": "n",
+              "rawValue": "3600000",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": "IF(COUNT(E4:E7)>0, SUM(E4:E7), \"Cần xác nhận\")"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Tổng hợp quỹ Hà Nội",
+      "path": "xl/worksheets/sheet9.xml",
+      "rows": [
+        {
+          "row": 1,
+          "cells": {
+            "B1": {
+              "text": "BÁO CÁO TỔNG HỢP QUỸ CLB BÓNG ĐÁ – CƠ SỞ HÀ NỘI",
+              "type": "s",
+              "rawValue": "191",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 3,
+          "cells": {
+            "B3": {
+              "text": "Chỉ tiêu tài chính",
+              "type": "s",
+              "rawValue": "193",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C3": {
+              "text": "Giá trị",
+              "type": "s",
+              "rawValue": "197",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "D3": {
+              "text": "Đơn vị tính",
+              "type": "s",
+              "rawValue": "199",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E3": {
+              "text": "Ghi chú & Trạng thái",
+              "type": "s",
+              "rawValue": "202",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 4,
+          "cells": {
+            "B4": {
+              "text": "Số thành viên Hà Nội đã xác nhận",
+              "type": "s",
+              "rawValue": "203",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C4": {
+              "text": "48.0",
+              "type": "n",
+              "rawValue": "48.0",
+              "numberFormat": "3",
+              "formula": null
+            },
+            "D4": {
+              "text": "Thành viên",
+              "type": "s",
+              "rawValue": "207",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 5,
+          "cells": {
+            "B5": {
+              "text": "Mức đóng quỹ tháng đầu / người",
+              "type": "s",
+              "rawValue": "211",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C5": {
+              "text": "230000.0",
+              "type": "n",
+              "rawValue": "230000.0",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": null
+            },
+            "D5": {
+              "text": "VNĐ / người",
+              "type": "s",
+              "rawValue": "212",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 6,
+          "cells": {
+            "B6": {
+              "text": "Tổng tiền quỹ dự kiến",
+              "type": "s",
+              "rawValue": "216",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C6": {
+              "text": "11040000",
+              "type": "n",
+              "rawValue": "11040000",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": "C4*C5"
+            },
+            "D6": {
+              "text": "VNĐ",
+              "type": "s",
+              "rawValue": "220",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 7,
+          "cells": {
+            "B7": {
+              "text": "Tổng chi phí dự kiến",
+              "type": "s",
+              "rawValue": "147",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C7": {
+              "text": "3600000",
+              "type": "n",
+              "rawValue": "3600000",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": "'Dự trù chi phí'!E8"
+            },
+            "D7": {
+              "text": "VNĐ",
+              "type": "s",
+              "rawValue": "220",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 8,
+          "cells": {
+            "B8": {
+              "text": "Số dư / Số tiền còn thiếu",
+              "type": "s",
+              "rawValue": "229",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C8": {
+              "text": "7440000",
+              "type": "n",
+              "rawValue": "7440000",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": "IF(ISNUMBER(C7), C6-C7, \"Cần xác nhận (chờ tổng hợp đơn giá)\")"
+            },
+            "D8": {
+              "text": "VNĐ",
+              "type": "s",
+              "rawValue": "220",
+              "numberFormat": "0",
+              "formula": null
+            }
+          }
+        },
+        {
+          "row": 9,
+          "cells": {
+            "B9": {
+              "text": "Quỹ thực thu hiện tại (đã nộp)",
+              "type": "s",
+              "rawValue": "233",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "C9": {
+              "text": "2300000",
+              "type": "n",
+              "rawValue": "2300000",
+              "numberFormat": "#,##0\" ₫\"",
+              "formula": "COUNTIF('Danh sách thành viên CLB Bóng đ'!G4:G1000, \"Đã đóng*\") * C5"
+            },
+            "D9": {
+              "text": "VNĐ",
+              "type": "s",
+              "rawValue": "220",
+              "numberFormat": "0",
+              "formula": null
+            },
+            "E9": {
+              "text": "10/48 thành viên đã đóng",
+              "type": "str",
+              "rawValue": "10/48 thành viên đã đóng",
+              "numberFormat": "0",
+              "formula": "COUNTIF('Danh sách thành viên CLB Bóng đ'!G4:G1000, \"Đã đóng*\") & \"/\" & C4 & \" thành viên đã đóng\""
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "receipts": [
+    {
+      "id": "gs-receipt-01",
+      "path": "assets/receipts/source-image10.png",
+      "member": null,
+      "assignment": "needs-verification",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 3,
+        "cell": "H3",
+        "originalImage": "xl/media/image10.png",
+        "offsetX": 2486025,
+        "offsetY": 381000
+      }
+    },
+    {
+      "id": "gs-receipt-02",
+      "path": "assets/receipts/source-image6.png",
+      "member": null,
+      "assignment": "needs-verification",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 42,
+        "cell": "I42",
+        "originalImage": "xl/media/image6.png",
+        "offsetX": 695325,
+        "offsetY": 161925
+      }
+    },
+    {
+      "id": "gs-receipt-03",
+      "path": "assets/receipts/source-image4.jpg",
+      "member": "gs-member-002",
+      "assignment": "exact-cell-anchor",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 5,
+        "cell": "I5",
+        "originalImage": "xl/media/image4.jpg",
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    },
+    {
+      "id": "gs-receipt-04",
+      "path": "assets/receipts/source-image1.jpg",
+      "member": "gs-member-012",
+      "assignment": "exact-cell-anchor",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 15,
+        "cell": "I15",
+        "originalImage": "xl/media/image1.jpg",
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    },
+    {
+      "id": "gs-receipt-05",
+      "path": "assets/receipts/source-image9.png",
+      "member": "gs-member-018",
+      "assignment": "exact-cell-anchor",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 21,
+        "cell": "I21",
+        "originalImage": "xl/media/image9.png",
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    },
+    {
+      "id": "gs-receipt-06",
+      "path": "assets/receipts/source-image8.jpg",
+      "member": "gs-member-022",
+      "assignment": "exact-cell-anchor",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 25,
+        "cell": "I25",
+        "originalImage": "xl/media/image8.jpg",
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    },
+    {
+      "id": "gs-receipt-07",
+      "path": "assets/receipts/source-image3.png",
+      "member": "gs-member-023",
+      "assignment": "exact-cell-anchor",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 26,
+        "cell": "I26",
+        "originalImage": "xl/media/image3.png",
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    },
+    {
+      "id": "gs-receipt-08",
+      "path": "assets/receipts/source-image5.png",
+      "member": "gs-member-024",
+      "assignment": "exact-cell-anchor",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 27,
+        "cell": "I27",
+        "originalImage": "xl/media/image5.png",
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    },
+    {
+      "id": "gs-receipt-09",
+      "path": "assets/receipts/source-image7.jpg",
+      "member": "gs-member-027",
+      "assignment": "exact-cell-anchor",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 30,
+        "cell": "I30",
+        "originalImage": "xl/media/image7.jpg",
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    },
+    {
+      "id": "gs-receipt-10",
+      "path": "assets/receipts/source-image2.jpg",
+      "member": "gs-member-048",
+      "assignment": "exact-cell-anchor",
+      "source": {
+        "sheet": "Danh sách thành viên CLB Bóng đ",
+        "sheetIndex": 7,
+        "row": 51,
+        "cell": "I51",
+        "originalImage": "xl/media/image2.jpg",
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    }
+  ]
+}
